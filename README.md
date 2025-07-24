@@ -14,6 +14,7 @@ A modern fullstack podcast discovery and listening platform. Built with **NestJS
 - **Backend:** [NestJS](https://nestjs.com/), TypeScript
 - **Database & Auth:** [Supabase](https://supabase.com/)
 - **API:** iTunes Search API (for podcast data)
+- **API Documentation:** [Swagger (OpenAPI)](https://swagger.io/)
 - **Other:** ESLint, Prettier, React Context, etc.
 
 ---
@@ -78,6 +79,16 @@ npm run dev
 
 - Frontend: http://localhost:3000
 - Backend:  http://localhost:3001 (or as configured)
+
+---
+
+## API Documentation
+The backend exposes interactive API documentation using **Swagger** (OpenAPI).
+
+- Once the backend is running, access the Swagger UI at:
+  - [http://localhost:3001/api-docs](http://localhost:3001/api-docs) (default)
+- Use this interface to explore, test, and understand all available API endpoints.
+- For more on Swagger: [Swagger Documentation](https://swagger.io/docs/)
 
 ---
 
