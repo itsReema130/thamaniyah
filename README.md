@@ -22,10 +22,27 @@ A modern fullstack podcast discovery and listening platform. Built with **NestJS
 ## Directory Structure
 ```
 project-root/
-  backend/      # NestJS backend (API, business logic, types)
-  frontend/     # Next.js frontend (UI, pages, components)
-  README.md     # This file
-  ...           # Other project files
+├── backend/         # NestJS backend (API, business logic, types, Swagger docs)
+│   ├── src/
+│   │   ├── modules/     # Feature modules (controllers, services)
+│   │   ├── common/      # Shared utilities, guards, interceptors
+│   │   ├── main.ts      # Entry point for NestJS app
+│   │   └── ...          # Other backend source files
+│   ├── test/            # Backend tests
+│   ├── .env             # Backend environment variables
+│   └── ...              # Other backend config files
+├── frontend/        # Next.js frontend (UI, pages, components)
+│   ├── src/
+│   │   ├── app/         # Next.js app directory (routing, pages)
+│   │   ├── components/  # Reusable React components (Logo, PodcastCard, etc.)
+│   │   ├── core/        # Types, helpers, context
+│   │   └── ...          # Other frontend source files
+│   ├── public/          # Static assets (images, favicon, etc.)
+│   ├── .env             # Frontend environment variables
+│   └── ...              # Other frontend config files
+├── README.md        # Project documentation (this file)
+├── package.json     # Project-level scripts and dependencies (if any)
+└── ...             # Other project files (e.g., .gitignore, .editorconfig)
 ```
 
 ---
