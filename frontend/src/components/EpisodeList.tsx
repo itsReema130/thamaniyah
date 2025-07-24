@@ -1,12 +1,8 @@
 import React from 'react';
-
-interface Episode {
-  title: string;
-  author: string;
-}
+import { ItunesSearchResult } from '../core/type/search.type';
 
 interface EpisodeListProps {
-  episodes: Episode[];
+  episodes: ItunesSearchResult[];
 }
 
 export default function EpisodeList({ episodes }: EpisodeListProps) {
@@ -16,9 +12,9 @@ export default function EpisodeList({ episodes }: EpisodeListProps) {
         {episodes.map((ep, idx) => (
           <li key={idx} className="py-3 flex flex-col">
             <span className="text-white text-sm font-semibold truncate">
-              {ep.title}
+              {ep.trackName}
             </span>
-            <span className="text-xs text-gray-400 truncate">{ep.author}</span>
+            <span className="text-xs text-gray-400 truncate">{ep.artistName}</span>
           </li>
         ))}
       </ul>
